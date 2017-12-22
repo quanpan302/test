@@ -1,6 +1,6 @@
 FROM gcc
 
-LABEL maintainer=@joshuacook
+LABEL maintainer=@quanpan
 
 RUN apt-get update && \
   apt-get install -y \
