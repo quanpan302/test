@@ -8,3 +8,9 @@ RUN apt-get update && \
   libgsl0-dbg \
   libgsl0-dev
   
+RUN gcc \
+  -I /usr/include/ \
+  -L /usr/lib/ -lgsl -lgslcblas \
+  /home/src/bessel.c
+  -o /home/build/bessel
+  
