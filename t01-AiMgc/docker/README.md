@@ -1,8 +1,6 @@
-Docker:
-=======
+# Docker:
 
-$ docker build -t gsl docker
-----------------------------
+## $ docker build -t gsl docker
 
 ```
 Sending build context to Docker daemon 2.048 kB
@@ -25,8 +23,7 @@ Removing intermediate container 988614cb6d56
 Successfully built 568814736d4b
 ```
 
-$ docker images
----------------
+## $ docker images
 
 ```
 REPOSITORY TAG IMAGE ID CREATED SIZE
@@ -34,6 +31,7 @@ gsl latest b3f3b5f49e4a 24 hours ago 1.52 GB
 ...
 ```
 
+# Dockerfile
 
 ## gsl
 
