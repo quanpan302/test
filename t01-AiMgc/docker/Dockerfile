@@ -9,11 +9,3 @@ RUN apt-get update && \
   libgsl0-dev \
   libgsl2
   
-RUN -v 'pwd':/home \
-  gsl \
-  gcc \
-  -I /usr/include/ \
-  -L /usr/lib/ -lgsl -lgslcblas \
-  /home/src/bessel.c
-  -o /home/build/bessel
-  
