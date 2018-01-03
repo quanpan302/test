@@ -1,6 +1,24 @@
 # Docker:
 
-All Commands:
+Management Commands:
+
+```
+  checkpoint  Manage checkpoints
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  volume      Manage volumes
+```
+
+Commands:
 
 ```
   attach      Attach local standard input, output, and error streams to a running container
