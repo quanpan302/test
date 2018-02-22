@@ -390,6 +390,8 @@ docker-machine stop $(docker-machine ls -q)                                     
 docker-machine rm $(docker-machine ls -q)                                                 # Delete all VMs and their disk images
 ==============
 docker stack deploy -c <file> <app>                                                       # Deploy an app; command shell must be set to talk to manager (myvm1), uses local Compose file
+docker stack ps <app>                                                                     # List
+docker stack rm <app>                                                                     # Remove
 docker-machine scp docker-compose.yml myvm1:~                                             # Copy file to node's home dir (only required if you use ssh to connect to manager and deploy the app)
 docker-machine ssh myvm1 "docker stack deploy -c <file> <app>"                            # Deploy an app using ssh (you must have first copied the Compose file to myvm1)
 ```
