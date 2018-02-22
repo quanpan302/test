@@ -1,4 +1,6 @@
-# Get Started, Part 2: [Containers](http://devdocs.io/docker~17/get-started/part2/index)
+# Get Started, Part 2
+
+[Containers](http://devdocs.io/docker~17/get-started/part2/index)
 
 ## Build the app
 
