@@ -13,11 +13,11 @@ docker build -t friendlyhello .
 Where is your built image? It’s in your machine’s local Docker image registry:
 
 ```
-$ docker images
+docker images
 
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-friendlyhello       latest              e9c8db7940a0        44 seconds ago      149MB
-python              2.7-slim            52ad41c7aea4        6 days ago          139MB
+> REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+> friendlyhello       latest              e9c8db7940a0        44 seconds ago      149MB
+> python              2.7-slim            52ad41c7aea4        6 days ago          139MB
 ```
 
 ## Run the app
@@ -41,7 +41,7 @@ including “Hello World” text, the container ID, and the **Redis error messag
 You can also use the curl command in a shell to view the same content.
 
 ```
-$ curl http://localhost:4000
+curl http://localhost:4000
 
 <h3>Hello World!</h3><b>Hostname:</b> e9c8db7940a0<br/><b>Visits:</b> <i>cannot connect to Redis, counter disabled</i>
 ```
@@ -64,9 +64,10 @@ Your container is running in the background.
 You can also see the abbreviated container ID with docker `container ls` (and both work interchangeably when running commands):
 
 ```
-$ docker container ls
-CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                  NAMES
-ffa318fd7e18        friendlyhello       "python app.py"     About a minute ago   Up About a minute   0.0.0.0:4000->80/tcp   gracious_mayer
+docker container ls
+
+> CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                  NAMES
+> ffa318fd7e18        friendlyhello       "python app.py"     About a minute ago   Up About a minute   0.0.0.0:4000->80/tcp   gracious_mayer
 ```
 
 You’ll see that `CONTAINER ID` matches what’s on `http://localhost:4000`.
@@ -100,10 +101,11 @@ docker tag friendlyhello quanpan302/test:t01
 
 ```
 $ docker image ls
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-friendlyhello       latest              e9c8db7940a0        3 minutes ago       149MB
-quanpan302/test     t01                 e9c8db7940a0        3 minutes ago       149MB
-python              2.7-slim            52ad41c7aea4        6 days ago          139MB
+
+> REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+> friendlyhello       latest              e9c8db7940a0        3 minutes ago       149MB
+> quanpan302/test     t01                 e9c8db7940a0        3 minutes ago       149MB
+> python              2.7-slim            52ad41c7aea4        6 days ago          139MB
 ```
 
 **Untagged**: quanpan302/test:t01
