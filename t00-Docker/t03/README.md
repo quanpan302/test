@@ -364,6 +364,8 @@ docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1        
 docker-machine create --driver virtualbox myvm1                                           # Create a VM myvm1 (Mac, Win7, Linux)
 docker-machine create --driver virtualbox myvm2                                           # Create a VM myvm2 (Mac, Win7, Linux)
 ==============
+docker-machine ls                                                                         # list VMs, asterisk shows which VM this shell is talking to
+==============
 docker-machine env myvm1                                                                  # View basic information about your node, show environment variables and command for myvm1
                                                                                           # myvm1 ACTIVE -
 docker-machine ssh myvm1                                                                  # Open an SSH session with the VM; type "exit" to end
@@ -382,13 +384,14 @@ eval $(docker-machine env -u)                                                   
 docker-machine ssh myvm2 "docker swarm leave"                                             # Make the worker leave the swarm
 docker-machine ssh myvm1 "docker swarm leave -f"                                          # Make master leave, kill swarm
 ==============
-docker-machine ls                                                                         # list VMs, asterisk shows which VM this shell is talking to
 docker-machine stop myvm1                                                                 # Stop a VM that is currently not running
 docker-machine start myvm1                                                                # Start a VM that is currently not running
+==============
 docker-machine stop $(docker-machine ls -q)                                               # Stop all running VMs
 docker-machine rm $(docker-machine ls -q)                                                 # Delete all VMs and their disk images
 ==============
 docker stack deploy -c <file> <app>                                                       # Deploy an app; command shell must be set to talk to manager (myvm1), uses local Compose file
+docker stack deploy -c docker-compose.yml getstartedlab                                   # Deploy an app; command shell must be set to talk to manager (myvm1), uses local Compose file
 docker stack ps <app>                                                                     # List
 docker stack rm <app>                                                                     # Remove
 docker-machine scp docker-compose.yml myvm1:~                                             # Copy file to node's home dir (only required if you use ssh to connect to manager and deploy the app)
