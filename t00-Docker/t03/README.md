@@ -360,7 +360,6 @@ docker-machine ls
 ```
 docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1                  # Win10
 & "C:\Program Files\Docker\Docker\Resources\bin\docker-machine.exe" env myvm1 | Invoke-Expression   # Windows command to connect shell to myvm1
-
 ==============
 docker-machine create --driver virtualbox myvm1                                           # Create a VM myvm1 (Mac, Win7, Linux)
 docker-machine create --driver virtualbox myvm2                                           # Create a VM myvm2 (Mac, Win7, Linux)
@@ -373,7 +372,7 @@ docker-machine ssh myvm2 "docker swarm join --token <SWMTKN> <node manager ip>:<
 docker-machine ssh myvm1 "docker node ls"                                                 # List the nodes in your swarm
 docker-machine ssh myvm1 "docker node inspect <node ID>"                                  # Inspect a node
 docker-machine ssh myvm1 "docker swarm join-token -q worker"                              # View join token
-
+==============
 eval $(docker-machine env myvm1)                                                          # Mac command to connect shell to myvm1
                                                                                           # myvm1 ACTIVE *
 docker node ls                                                                            # View nodes in swarm (while logged on to manager)
