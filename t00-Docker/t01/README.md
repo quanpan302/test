@@ -2,6 +2,42 @@
 
 [Containers](http://devdocs.io/docker~17/get-started/part2/index)
 
+## Define a container with Dockerfile
+
+**Dockerfile**
+
+Dockerfile defines what goes on in the environment inside your container.
+Access to resources like networking interfaces and disk drives is virtualized inside this environment,
+
+* which is isolated from the rest of your system,
+* so you need to map ports to the outside world,
+* and be specific about what files you want to “copy in” to that environment.
+
+However, after doing that, you can expect that the build of your app defined in this Dockerfile behaves exactly the same wherever it runs.
+
+```
+# Use an official Python runtime as a parent image
+FROM python:2.7-slim
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+ADD . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --trusted-host pypi.python.org -r requirements.txt
+
+# Make port 80 available to the world outside this container
+EXPOSE 80
+
+# Define environment variable
+ENV NAME World
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+```
+
 ## Build the app
 
 We are ready to build the app. Make sure you are still at the top level of your new directory. Here’s what `ls` should show:

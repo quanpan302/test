@@ -2,6 +2,25 @@
 
 [Services](http://devdocs.io/docker~17/get-started/part3/index)
 
+## About services
+
+In a distributed application, different pieces of the app are called “services.”
+
+For example, if you imagine a video sharing site, it probably includes
+
+* a service for storing application data in a database,
+* a service for video transcoding in the background after a user uploads something,
+* a service for the front-end, and so on.
+
+Services are really just “containers in production.”
+
+**A service** only runs **one image**,
+but it codifies the way that image runs—what ports it should use,
+how many replicas of the container should run so the service has the capacity it needs, and so on.
+
+Scaling a service changes the number of container instances running that piece of software,
+assigning more computing resources to the service in the process.
+
 ## Your first `docker-compose.yml` file
 
 ```
@@ -35,13 +54,15 @@ This docker-compose.yml file tells Docker to do the following:
 * Instruct web’s containers to share port 80 via a load-balanced network called webnet. (Internally, the containers themselves will publish to web’s port 80 at an ephemeral port.)
 * Define the webnet network with the default settings (which is a load-balanced overlay network).
 
-**Wondering about Compose file versions, names, and commands?**
-
-Notice that we set the Compose file to `version: "3"`.
-This essentially makes it [swarm mode](http://devdocs.io/docker~17/engine/swarm/index) compatible.
-We can make use of the deploy key (only available on Compose file formats version 3.x and up) and its sub-options to load balance and optimize performance for each service (e.g., `web`).
-We can run the file with the `docker stack deploy` command (also only supported on Compose files version 3.x and up).
-You could use `docker-compose up` to run version 3 files with non swarm configurations, but we are focusing on a stack deployment since we are building up to a swarm example.
+> **Wondering about Compose file versions, names, and commands?**
+> 
+> Notice that we set the Compose file to `version: "3"`.
+> 
+> This essentially makes it [swarm mode](http://devdocs.io/docker~17/engine/swarm/index) compatible.
+> 
+> * We can make use of the deploy key (only available on Compose file formats version 3.x and up) and its sub-options to load balance and optimize performance for each service (e.g., `web`).
+> * We can run the file with the `docker stack deploy` command (also only supported on Compose files version 3.x and up).
+> * You could use `docker-compose up` to run version 3 files with non swarm configurations, but we are focusing on a stack deployment since we are building up to a swarm example.
 
 *You can name the Compose file anything you want to make it logically meaningful to you; `docker-compose.yml` is simply a standard name. We could just as easily have called this file `docker-stack.yml` or something more specific to our project.*
 
