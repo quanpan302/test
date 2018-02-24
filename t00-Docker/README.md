@@ -12,7 +12,16 @@ All Docker tests, tutorials and examples
 - [The Underlying Technology](#the-underlying-technology)
   - [Namespaces](#namespaces)
 - [Dockerfile Reference](#dockerfile-reference-link)
-- [Compose file version 3 reference](#compose-file-version-3-reference)
+- [Compose file version 3 reference](#compose-file-version-3-reference-link)
+  - [Service configuration reference](#service-configuration-reference-link)
+  - [Specifying durations](#specifying-durations-link)
+  - [Specifying byte values](#specifying-byte-values-link)
+  - [Volume configuration reference](#volume-configuration-reference-link)
+  - [Network configuration reference](#network-configuration-reference-link)
+  - [configs configuration reference](#configs-configuration-reference-link)
+  - [secrets configuration reference](#secrets-configuration-reference-link)
+  - [Variable substitution](#variable-substitution-link)
+  - [Extension fields](#extension-fields-link)
 
 # Docker Overview
 
@@ -219,4 +228,37 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    * on Linux is `["/bin/sh", "-c"]`
    * on Windows is `["cmd", "/S", "/C"]`
 
-# Compose file version 3 reference
+# Compose file version 3 reference [link](https://docs.docker.com/compose/compose-file/)
+
+| Compose file format | Docker Engine release |
+|---------------------|-----------------------|
+| 3.6                 | 18.02.0+              |
+| 3.5                 | 17.12.0+              |
+| 3.4                 | 17.09.0+              |
+| 3.3                 | 17.06.0+              |
+| 3.2                 | 17.04.0+              |
+| 3.1                 | 1.13.1+               |
+| 3.0                 | 1.13.0+               |
+| 2.3                 | 17.06.0+              |
+| 2.2                 | 1.13.0+               |
+| 2.1                 | 1.12.0+               |
+| 2.0                 | 1.10.0+               |
+| 1.0                 | 1.9.1.+               |
+
+## Service configuration reference [link](https://docs.docker.com/compose/compose-file/#service-configuration-reference)
+
+## Specifying durations [link](https://docs.docker.com/compose/compose-file/#specifying-durations)
+
+## Specifying byte values [link](https://docs.docker.com/compose/compose-file/#specifying-byte-values)
+
+## Volume configuration reference [link](https://docs.docker.com/compose/compose-file/#volume-configuration-reference)
+
+## Network configuration reference [link](https://docs.docker.com/compose/compose-file/#network-configuration-reference)
+
+## configs configuration reference [link](https://docs.docker.com/compose/compose-file/#configs-configuration-reference)
+
+## secrets configuration reference [link](https://docs.docker.com/compose/compose-file/#secrets-configuration-reference)
+
+## Variable substitution [link](https://docs.docker.com/compose/compose-file/#variable-substitution)
+
+## Extension fields [link](https://docs.docker.com/compose/compose-file/#extension-fields)
