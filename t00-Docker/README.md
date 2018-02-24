@@ -4,7 +4,7 @@ All Docker tests, tutorials and examples
 
 :link:[docs.docker.com/get-started](https://docs.docker.com/get-started/part2/#build-the-app)
 
-**Table of Contents**
+# Table of Contents
 
 - [Docker Overview](#docker-overview)
   - [Docker Engine](#docker-engine)
@@ -279,3 +279,5 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
 ## Variable substitution [link](https://docs.docker.com/compose/compose-file/#variable-substitution)
 
 ## Extension fields [link](https://docs.docker.com/compose/compose-file/#extension-fields)
+
+[Back to TOC](#table-of-contents)
