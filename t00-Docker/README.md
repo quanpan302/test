@@ -10,8 +10,8 @@ All Docker tests, tutorials and examples
   - [Docker Engine](#docker-engine)
   - [Docker Architecture](#docker-architecture)
 - [The Underlying Technology](#the-underlying-technolog)
-  - [Namespaces](#Namespaces)
-- [Dockerfile Reference](#dockerfile-reference)
+  - [Namespaces](#namespaces)
+- [Dockerfile Reference](#dockerfile-reference-link)
 
 # Docker Overview
 
