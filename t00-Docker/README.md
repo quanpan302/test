@@ -93,12 +93,16 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    `FROM <image>[@<digest>] [AS <name>]`
    
+[_Back to TOC_](#table-of-contents)
+
 ## RUN [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#run)
    
    `RUN <command>` _(shell form, the command is run in a shell, which by default is `/bin/sh -c` on Linux_ or _`cmd /S /C` on Windows)_
    
    `RUN ["executable", "param1", "param2"]` _(exec form)_
    
+[_Back to TOC_](#table-of-contents)
+
 ## CMD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#cmd)
    
    `CMD ["executable","param1","param2"]` _(exec form, this is the preferred form)_
@@ -107,6 +111,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    `CMD command param1 param2` _(shell form)_
    
+[_Back to TOC_](#table-of-contents)
+
 ## LABEL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#label)
    
    `LABEL <key>=<value> <key>=<value> <key>=<value> ...`
@@ -119,10 +125,14 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    that label-values can span multiple lines."
    ```
    
+[_Back to TOC_](#table-of-contents)
+
 ## EXPOSE [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#expose)
    
    `EXPOSE <port> [<port>/<protocol>...]`
    
+[_Back to TOC_](#table-of-contents)
+
 ## ENV [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#env)
    
    ```
@@ -130,16 +140,22 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    ENV <key>=<value> ...
    ```
    
+[_Back to TOC_](#table-of-contents)
+
 ## ADD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#add)
    
    * `ADD [--chown=<user>:<group>] <src>... <dest>`
    * `ADD [--chown=<user>:<group>] ["<src>",... "<dest>"]` _(this form is required for paths containing whitespace)_
    
+[_Back to TOC_](#table-of-contents)
+
 ## COPY [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#copy)
    
    * `COPY [--chown=<user>:<group>] <src>... <dest>`
    * `COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]` _(this form is required for paths containing whitespace)_
    
+[_Back to TOC_](#table-of-contents)
+
 ## ENTRYPOINT [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#entrypoint)
    
    * `ENTRYPOINT ["executable", "param1", "param2"]` _(exec form, preferred)_
@@ -152,6 +168,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    | CMD [“p1\_cmd”, “p2\_cmd”]   | p1\_cmd p2\_cmd              | /bin/sh -c exec\_entry p1\_entry | exec\_entry p1\_entry p1\_cmd p2\_cmd              |
    | CMD exec\_cmd p1\_cmd        | /bin/sh -c exec\_cmd p1\_cmd | /bin/sh -c exec\_entry p1\_entry | exec\_entry p1\_entry /bin/sh -c exec\_cmd p1\_cmd |
    
+[_Back to TOC_](#table-of-contents)
+
 ## VOLUME [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#volume)
    
    `VOLUME ["/data"]`
@@ -159,6 +177,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    For more information/examples and mounting instructions via the Docker client,
    refer to [Share Directories via Volumes](https://docs.docker.com/storage/volumes/) documentation.
    
+[_Back to TOC_](#table-of-contents)
+
 ## USER [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#user)
    
    ```
@@ -166,6 +186,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    USER <UID>[:<GID>]
    ```
    
+[_Back to TOC_](#table-of-contents)
+
 ## WORKDIR [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#workdir)
    
    `WORKDIR /path/to/workdir`
@@ -181,6 +203,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    The output of the final `pwd` command in this `Dockerfile` would be `/path/$DIRNAME`
    
+[_Back to TOC_](#table-of-contents)
+
 ## ARG [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#arg)
    
    `ARG <name>[=<default value>]`
@@ -211,14 +235,20 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    * `NO_PROXY`
    * `no_proxy`
    
+[_Back to TOC_](#table-of-contents)
+
 ## ONBUILD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#onbuild)
    
    `ONBUILD [INSTRUCTION]`
    
+[_Back to TOC_](#table-of-contents)
+
 ## STOPSIGNAL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#stopsignal)
    
    `STOPSIGNAL signal`
    
+[_Back to TOC_](#table-of-contents)
+
 ## HEALTHCHECK [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#healthcheck)
    
    * `HEALTHCHECK [OPTIONS] CMD command` _(check container health by running a command inside the container)_
@@ -236,6 +266,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
      CMD curl -f http://localhost/ || exit 1
    ```
      
+[_Back to TOC_](#table-of-contents)
+
 ## SHELL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#shell)
    
    `SHELL ["executable", "parameters"]`
@@ -244,6 +276,8 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    * on Linux is `["/bin/sh", "-c"]`
    * on Windows is `["cmd", "/S", "/C"]`
+
+[_Back to TOC_](#table-of-contents)
 
 # Compose file version 3 reference [link](https://docs.docker.com/compose/compose-file/)
 
@@ -264,20 +298,36 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
 
 ## Service configuration reference [link](https://docs.docker.com/compose/compose-file/#service-configuration-reference)
 
+[_Back to TOC_](#table-of-contents)
+
 ## Specifying durations [link](https://docs.docker.com/compose/compose-file/#specifying-durations)
+
+[_Back to TOC_](#table-of-contents)
 
 ## Specifying byte values [link](https://docs.docker.com/compose/compose-file/#specifying-byte-values)
 
+[_Back to TOC_](#table-of-contents)
+
 ## Volume configuration reference [link](https://docs.docker.com/compose/compose-file/#volume-configuration-reference)
+
+[_Back to TOC_](#table-of-contents)
 
 ## Network configuration reference [link](https://docs.docker.com/compose/compose-file/#network-configuration-reference)
 
+[_Back to TOC_](#table-of-contents)
+
 ## configs configuration reference [link](https://docs.docker.com/compose/compose-file/#configs-configuration-reference)
+
+[_Back to TOC_](#table-of-contents)
 
 ## secrets configuration reference [link](https://docs.docker.com/compose/compose-file/#secrets-configuration-reference)
 
+[_Back to TOC_](#table-of-contents)
+
 ## Variable substitution [link](https://docs.docker.com/compose/compose-file/#variable-substitution)
+
+[_Back to TOC_](#table-of-contents)
 
 ## Extension fields [link](https://docs.docker.com/compose/compose-file/#extension-fields)
 
-[Back to TOC](#table-of-contents)
+[_Back to TOC_](#table-of-contents)
