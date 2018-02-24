@@ -164,7 +164,7 @@ docker push quanpan302/test:t01
 
 ## Recap and cheat sheet (optional)
 
-Here is a list of the basic Docker commands from this page, and some related ones if you’d like to explore a bit before moving on.
+_Here are some commands you might like to run to interact with your swarm and your VMs a bit_
 
 ```
 docker build -t friendlyhello .                    # Create image using this directory's Dockerfile

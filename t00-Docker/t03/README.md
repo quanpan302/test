@@ -354,8 +354,7 @@ docker-machine ls
 > myvm2   -        virtualbox   Stopped                 Unknown   
 ```
 
-**Restarting Docker machines**
-
+_Here are some commands you might like to run to interact with your swarm and your VMs a bit_
 
 ```
 docker-machine create -d hyperv --hyperv-virtual-switch "myswitch" myvm1                  # Win10

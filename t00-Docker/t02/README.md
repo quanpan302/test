@@ -195,6 +195,8 @@ Up next, you will learn how to run this app as a bonafide swarm on a cluster of 
 
 ## Recap and cheat sheet (optional)
 
+_Here are some commands you might like to run to interact with your swarm and your VMs a bit_
+
 ```
 docker stack ls                                 # List stacks or apps
 docker stack deploy -c <composefile> <appname>  # Run the specified Compose file
