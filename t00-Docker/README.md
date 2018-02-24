@@ -85,7 +85,7 @@ Docker Engine uses namespaces such as the following on Linux:
 
 These recommendations help you to write an efficient and maintainable `Dockerfile`.
 
-1. **FROM** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#from)
+## FROM [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#from)
    
    `FROM <image> [AS <name>]`
    
@@ -93,13 +93,13 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    `FROM <image>[@<digest>] [AS <name>]`
    
-2. **RUN** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#run)
+## RUN [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#run)
    
    `RUN <command>` _(shell form, the command is run in a shell, which by default is `/bin/sh -c` on Linux_ or _`cmd /S /C` on Windows)_
    
    `RUN ["executable", "param1", "param2"]` _(exec form)_
    
-3. **CMD** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#cmd)
+## CMD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#cmd)
    
    `CMD ["executable","param1","param2"]` _(exec form, this is the preferred form)_
    
@@ -107,7 +107,7 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    `CMD command param1 param2` _(shell form)_
    
-4. **LABEL** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#label)
+## LABEL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#label)
    
    `LABEL <key>=<value> <key>=<value> <key>=<value> ...`
    
@@ -119,28 +119,28 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    that label-values can span multiple lines."
    ```
    
-5. **EXPOSE** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#expose)
+## EXPOSE [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#expose)
    
    `EXPOSE <port> [<port>/<protocol>...]`
    
-6. **ENV** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#env)
+## ENV [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#env)
    
    ```
    ENV <key> <value>
    ENV <key>=<value> ...
    ```
    
-7. **ADD** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#add)
+## ADD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#add)
    
    * `ADD [--chown=<user>:<group>] <src>... <dest>`
    * `ADD [--chown=<user>:<group>] ["<src>",... "<dest>"]` _(this form is required for paths containing whitespace)_
    
-8. **COPY** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#copy)
+## COPY [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#copy)
    
    * `COPY [--chown=<user>:<group>] <src>... <dest>`
    * `COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]` _(this form is required for paths containing whitespace)_
    
-9. **ENTRYPOINT** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#entrypoint)
+## ENTRYPOINT [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#entrypoint)
    
    * `ENTRYPOINT ["executable", "param1", "param2"]` _(exec form, preferred)_
    * `ENTRYPOINT command param1 param2` _(shell form)_
@@ -152,21 +152,21 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    | CMD [“p1\_cmd”, “p2\_cmd”]   | p1\_cmd p2\_cmd              | /bin/sh -c exec\_entry p1\_entry | exec\_entry p1\_entry p1\_cmd p2\_cmd              |
    | CMD exec\_cmd p1\_cmd        | /bin/sh -c exec\_cmd p1\_cmd | /bin/sh -c exec\_entry p1\_entry | exec\_entry p1\_entry /bin/sh -c exec\_cmd p1\_cmd |
    
-10. **VOLUME** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#volume)
+## VOLUME [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#volume)
    
    `VOLUME ["/data"]`
    
    For more information/examples and mounting instructions via the Docker client,
    refer to [Share Directories via Volumes](https://docs.docker.com/storage/volumes/) documentation.
    
-11. **USER** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#user)
+## USER [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#user)
    
    ```
    USER <user>[:<group>]
    USER <UID>[:<GID>]
    ```
    
-12. **WORKDIR** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#workdir)
+## WORKDIR [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#workdir)
    
    `WORKDIR /path/to/workdir`
    
@@ -181,7 +181,7 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    The output of the final `pwd` command in this `Dockerfile` would be `/path/$DIRNAME`
    
-13. **ARG** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#arg)
+## ARG [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#arg)
    
    `ARG <name>[=<default value>]`
    
@@ -211,15 +211,15 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    * `NO_PROXY`
    * `no_proxy`
    
-14. **ONBUILD** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#onbuild)
+## ONBUILD [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#onbuild)
    
    `ONBUILD [INSTRUCTION]`
    
-15. **STOPSIGNAL** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#stopsignal)
+## STOPSIGNAL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#stopsignal)
    
    `STOPSIGNAL signal`
    
-16. **HEALTHCHECK** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#healthcheck)
+## HEALTHCHECK [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#healthcheck)
    
    * `HEALTHCHECK [OPTIONS] CMD command` _(check container health by running a command inside the container)_
    * `HEALTHCHECK NONE` _(disable any healthcheck inherited from the base image)_
@@ -236,7 +236,7 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
      CMD curl -f http://localhost/ || exit 1
    ```
      
-17. **SHELL** [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#shell)
+## SHELL [Dockerfile reference](https://docs.docker.com/engine/reference/builder/#shell)
    
    `SHELL ["executable", "parameters"]`
    
