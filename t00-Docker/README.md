@@ -9,9 +9,10 @@ All Docker tests, tutorials and examples
 - [Docker Overview](#docker-overview)
   - [Docker Engine](#docker-engine)
   - [Docker Architecture](#docker-architecture)
-- [The Underlying Technology](#the-underlying-technolog)
+- [The Underlying Technology](#the-underlying-technology)
   - [Namespaces](#namespaces)
 - [Dockerfile Reference](#dockerfile-reference-link)
+- [Compose file version 3 reference](#compose-file-version-3-reference)
 
 # Docker Overview
 
@@ -217,3 +218,5 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
    
    * on Linux is `["/bin/sh", "-c"]`
    * on Windows is `["cmd", "/S", "/C"]`
+
+# Compose file version 3 reference
