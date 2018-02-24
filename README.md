@@ -2,4 +2,5 @@
 
 All Tests
 
-## t01-AiMgc
+* 00-Template
+* t00-Docker
