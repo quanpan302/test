@@ -36,7 +36,7 @@ The Docker client and daemon can run on the same system, or you can connect a Do
 
 The Docker client and daemon communicate using a REST API, over UNIX sockets or a network interface.
 
-![architecture](https://raw.githubusercontent.com/quanpan302/test/master/t00-Docker/architecture.svg)
+<img src="https://raw.githubusercontent.com/quanpan302/test/master/t00-Docker/architecture.svg?sanitize=true">
 
 # The Underlying Technology
 
