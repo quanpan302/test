@@ -1071,20 +1071,26 @@ volumes:
   data-volume:
 ```
 
+[_Back to TOC_](#table-of-contents)
+
 ### driver [link](https://docs.docker.com/compose/compose-file/#driver)
   
 ```
 driver: foobar
 ```
-  
+
+[_Back to TOC_](#table-of-contents)
+
 ### driver\_opts [link](https://docs.docker.com/compose/compose-file/#driver_opts)
-  
+
 ```
 driver_opts:
   foo: "bar"
   baz: 1
 ```
-  
+
+[_Back to TOC_](#table-of-contents)
+
 ### external [link](https://docs.docker.com/compose/compose-file/#external)
 
 ```
@@ -1101,6 +1107,8 @@ volumes:
     external: true
 ```
 
+[_Back to TOC_](#table-of-contents)
+
 ### labels [link](https://docs.docker.com/compose/compose-file/#labels-3)
 
 ```
@@ -1114,6 +1122,8 @@ labels:
   - "com.example.department=IT/Ops"
   - "com.example.label-with-empty-value"
 ```
+
+[_Back to TOC_](#table-of-contents)
 
 ### name [link](https://docs.docker.com/compose/compose-file/#name)
 
@@ -1133,6 +1143,8 @@ The top-level networks key lets you specify networks to be created.
 * For a full explanation of Compose’s use of Docker networking features and all network driver options, see the Networking guide.
 * For Docker Labs tutorials on networking, start with Designing Scalable, Portable Docker Container Networks
 
+[_Back to TOC_](#table-of-contents)
+
 ### driver [link](https://docs.docker.com/compose/compose-file/#driver-1)
 
 Specify which driver should be used for this network.
@@ -1147,6 +1159,8 @@ driver: overlay
 * OVERLAY
 * HOST OR NONE
 
+[_Back to TOC_](#table-of-contents)
+
 ### driver\_opts [link](https://docs.docker.com/compose/compose-file/#driver_opts-1)
 
 Specify a list of options as key-value pairs to pass to the driver for this network.
@@ -1158,6 +1172,8 @@ driver_opts:
   foo: "bar"
   baz: 1
 ```
+
+[_Back to TOC_](#table-of-contents)
 
 ### attachable [link](https://docs.docker.com/compose/compose-file/#attachable)
 
@@ -1175,9 +1191,13 @@ networks:
     attachable: true
 ```
 
+[_Back to TOC_](#table-of-contents)
+
 ### enable\_ipv6 [link](https://docs.docker.com/compose/compose-file/#enable_ipv6)
 
 Enable IPv6 networking on this network.
+
+[_Back to TOC_](#table-of-contents)
 
 ### ipam [link](https://docs.docker.com/compose/compose-file/#ipam)
 
@@ -1196,11 +1216,15 @@ ipam:
     - subnet: 172.28.0.0/16
 ```
 
+[_Back to TOC_](#table-of-contents)
+
 ### internal [link](https://docs.docker.com/compose/compose-file/#internal)
 
 By default, Docker also connects a bridge network to it to provide external connectivity.
 
 If you want to create an externally isolated overlay network, you can set this option to `true`.
+
+[_Back to TOC_](#table-of-contents)
 
 ### labels [link](https://docs.docker.com/compose/compose-file/#labels-4)
 
@@ -1219,6 +1243,8 @@ labels:
   - "com.example.department=Finance"
   - "com.example.label-with-empty-value"
 ```
+
+[_Back to TOC_](#table-of-contents)
 
 ### external [link](https://docs.docker.com/compose/compose-file/#external-1)
 
@@ -1244,6 +1270,8 @@ networks:
   outside:
     external: true
 ```
+
+[_Back to TOC_](#table-of-contents)
 
 ### name [link](https://docs.docker.com/compose/compose-file/#name-1)
 
