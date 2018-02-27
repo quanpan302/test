@@ -33,6 +33,17 @@ All Docker tests, tutorials and examples
   - [Service configuration reference](#service-configuration-reference-link)
     - [build](#build-link)
     - [cap\_add, cap\_drop](#cap_add-cap_drop-link)
+    - [command](#command-link)
+    - [configs](#configs-link)
+    - [cgroup\_parent](#cgroup_parent-link)
+    - [container\_name](#container_name-link)
+    - [credential\_spec](#credential_spec-link)
+    - [deploy](#deploy-link)
+    - [devices](#devices-link)
+    - [depends\_on](#depends_on-link)
+    - [dns](#dns-link)
+    - [dns\_search](#dns_search-link)
+    - [tmpfs](#tmpfs-link)
   - [Specifying durations](#specifying-durations-link)
   - [Specifying byte values](#specifying-byte-values-link)
   - [Volume configuration reference](#volume-configuration-reference-link)
@@ -318,9 +329,58 @@ Configuration options that are applied at build time.
 
 [_Back to TOC_](#table-of-contents)
 
-## Specifying durations [link](https://docs.docker.com/compose/compose-file/#specifying-durations)
+### cap\_add, cap\_drop [link](https://docs.docker.com/compose/compose-file/#cap_add-cap_drop)
 
-### cap_add, cap_drop [link](https://docs.docker.com/compose/compose-file/#cap_add-cap_drop)
+[_Back to TOC_](#table-of-contents)
+
+### command [link](https://docs.docker.com/compose/compose-file/#command)
+
+[_Back to TOC_](#table-of-contents)
+
+### configs [link](https://docs.docker.com/compose/compose-file/#configs)
+
+* [SHORT SYNTAX](https://docs.docker.com/compose/compose-file/#short-syntax)
+* [LONG SYNTAX](https://docs.docker.com/compose/compose-file/#long-syntax)
+
+[_Back to TOC_](#table-of-contents)
+
+### cgroup\_parent [link](https://docs.docker.com/compose/compose-file/#cgroup_parent)
+
+[_Back to TOC_](#table-of-contents)
+
+### container\_name [link](https://docs.docker.com/compose/compose-file/#container_name)
+
+[_Back to TOC_](#table-of-contents)
+
+### credential\_spec [link](https://docs.docker.com/compose/compose-file/#credential_spec)
+
+[_Back to TOC_](#table-of-contents)
+
+### deploy [link](https://docs.docker.com/compose/compose-file/#deploy)
+
+[_Back to TOC_](#table-of-contents)
+
+### devices [link](https://docs.docker.com/compose/compose-file/#devices)
+
+[_Back to TOC_](#table-of-contents)
+
+### depends\_on [link](https://docs.docker.com/compose/compose-file/#depends_on)
+
+[_Back to TOC_](#table-of-contents)
+
+### dns [link](https://docs.docker.com/compose/compose-file/#dns)
+
+[_Back to TOC_](#table-of-contents)
+
+### dns_search [link](https://docs.docker.com/compose/compose-file/#dns_search)
+
+[_Back to TOC_](#table-of-contents)
+
+### tmpfs [link](https://docs.docker.com/compose/compose-file/#tmpfs)
+
+[_Back to TOC_](#table-of-contents)
+
+## Specifying durations [link](https://docs.docker.com/compose/compose-file/#specifying-durations)
 
 [_Back to TOC_](#table-of-contents)
 
