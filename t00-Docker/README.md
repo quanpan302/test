@@ -1292,17 +1292,87 @@ networks:
 
 ## configs configuration reference [link](https://docs.docker.com/compose/compose-file/#configs-configuration-reference)
 
+The top-level configs declaration defines or references configs that can be granted to the services in this stack.
+
+The source of the config is either file or external.
+
+* `file`: The config is created with the contents of the file at the specified path.
+* `external`: If set to true, specifies that this config has already been created. Docker does not attempt to create it, and if it does not exist, a config not found error occurs.
+* `name`: The name of the config object in Docker.
+  This field can be used to reference configs that contain special characters.
+  The name is used as is and will not be scoped with the stack name.
+  Introduced in version 3.5 file format.
+
+In this example, `my_first_config` is created (as `<stack_name>_my_first_config`),
+when the stack is deployed, and `my_second_config` already exists in Docker.
+
+```
+configs:
+  my_first_config:
+    file: ./config_data
+  my_second_config:
+    external: true
+```
+
 [_Back to TOC_](#table-of-contents)
 
 ## secrets configuration reference [link](https://docs.docker.com/compose/compose-file/#secrets-configuration-reference)
+
+The top-level secrets declaration defines or references secrets that can be granted to the services in this stack.
+
+The source of the secret is either file or external.
+
+* `file`: The secret is created with the contents of the file at the specified path.
+* `external`: If set to true, specifies that this secret has already been created. Docker does not attempt to create it, and if it does not exist, a secret not found error occurs.
+* `name`: The name of the secret object in Docker.
+  This field can be used to reference secrets that contain special characters.
+  The name is used as is and will not be scoped with the stack name.
+  Introduced in version 3.5 file format.
+
+In this example, `my_first_secret` is created (as `<stack_name>_my_first_secret`),
+when the stack is deployed, and `my_second_secret` already exists in Docker.
+
+```
+secrets:
+  my_first_secret:
+    file: ./secret_data
+  my_second_secret:
+    external: true
+```
 
 [_Back to TOC_](#table-of-contents)
 
 ## Variable substitution [link](https://docs.docker.com/compose/compose-file/#variable-substitution)
 
+Your configuration options can contain environment variables.
+
+Compose uses the variable values from the shell environment in which `docker-compose` is run.
+
+For example, suppose the shell contains `POSTGRES_VERSION=9.3` and you supply this configuration:
+
+```
+db:
+  image: "postgres:${POSTGRES_VERSION}"
+```
+
 [_Back to TOC_](#table-of-contents)
 
 ## Extension fields [link](https://docs.docker.com/compose/compose-file/#extension-fields)
+
+It is possible to re-use configuration fragments using extension fields.
+
+Those special fields can be of any format as long as they are located at the root of your Compose file and their name start with the `x-` character sequence.
+
+```
+version: '2.1'
+x-custom:
+  items:
+    - a
+    - b
+  options:
+    max-size: '12m'
+  name: "custom"
+```
 
 [_Back to TOC_](#table-of-contents)
 
