@@ -31,7 +31,7 @@ All Docker tests, tutorials and examples
   - [SHELL](#shell-dockerfile-reference)
 - [**Compose file version 3 reference**](#compose-file-version-3-reference-link)
   - [Service configuration reference](#service-configuration-reference-link)
-    - [build](#build)
+    - [build](#build-link)
   - [Specifying durations](#specifying-durations-link)
   - [Specifying byte values](#specifying-byte-values-link)
   - [Volume configuration reference](#volume-configuration-reference-link)
@@ -304,7 +304,7 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
 
 ## Service configuration reference [link](https://docs.docker.com/compose/compose-file/#service-configuration-reference)
 
-### [build](https://docs.docker.com/compose/compose-file/#build)
+### build [link](https://docs.docker.com/compose/compose-file/#build)
 
 Configuration options that are applied at build time.
 
