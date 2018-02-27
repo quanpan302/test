@@ -359,6 +359,28 @@ These recommendations help you to write an efficient and maintainable `Dockerfil
 
 Configuration options that are applied at build time.
 
+build can be specified either as a string containing a path to the build context:
+
+```
+version: '3'
+services:
+  webapp:
+    build: ./dir
+```
+
+Or, as an object with the path specified under `context` and optionally `Dockerfile` and `args`:
+
+```
+version: '3'
+services:
+  webapp:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        buildno: 1
+```
+
 * [CONTEXT](https://docs.docker.com/compose/compose-file/#context)
 * [DOCKERFILE](https://docs.docker.com/compose/compose-file/#dockerfile)
 * [ARGS](https://docs.docker.com/compose/compose-file/#args)
