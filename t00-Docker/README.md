@@ -32,6 +32,7 @@ All Docker tests, tutorials and examples
 - [**Compose file version 3 reference**](#compose-file-version-3-reference-link)
   - [Service configuration reference](#service-configuration-reference-link)
     - [build](#build-link)
+    - [cap\_add, cap\_drop](#cap_add-cap_drop-link)
   - [Specifying durations](#specifying-durations-link)
   - [Specifying byte values](#specifying-byte-values-link)
   - [Volume configuration reference](#volume-configuration-reference-link)
@@ -318,6 +319,8 @@ Configuration options that are applied at build time.
 [_Back to TOC_](#table-of-contents)
 
 ## Specifying durations [link](https://docs.docker.com/compose/compose-file/#specifying-durations)
+
+### cap_add, cap_drop [link](https://docs.docker.com/compose/compose-file/#cap_add-cap_drop)
 
 [_Back to TOC_](#table-of-contents)
 
