@@ -44,6 +44,31 @@ All Docker tests, tutorials and examples
     - [dns](#dns-link)
     - [dns\_search](#dns_search-link)
     - [tmpfs](#tmpfs-link)
+    - [entrypoint](#entrypoint-link)
+    - [env\_file](#env_file-link)
+    - [environment](#environment-link)
+    - [expose](#expose-link)
+    - [external\_links](#external_links-link)
+    - [extra\_hosts](#extra_hosts-link)
+    - [healthcheck](#healthcheck-link)
+    - [image](#image-link)
+    - [isolation](#isolation-link)
+    - [labels](#labels-link)
+    - [links](#links-link)
+    - [logging](#logging-link)
+    - [network\_mode](#network_mode-link)
+    - [networks](#networks-link)
+    - [pid](#pid-link)
+    - [ports](#ports-link)
+    - [secrets](#secrets-link)
+    - [security\_opt](#security_opt-link)
+    - [stop\_grace\_period](#stop_grace_period-link)
+    - [stop\_signal](#stop_signal-link)
+    - [sysctls](#sysctls-link)
+    - [ulimits](#ulimits-link)
+    - [userns\_mode](#userns_mode-link)
+    - [volumes](#volumes-link)
+    - [restart](#restart-link)
   - [Specifying durations](#specifying-durations-link)
   - [Specifying byte values](#specifying-byte-values-link)
   - [Volume configuration reference](#volume-configuration-reference-link)
@@ -377,6 +402,106 @@ Configuration options that are applied at build time.
 [_Back to TOC_](#table-of-contents)
 
 ### tmpfs [link](https://docs.docker.com/compose/compose-file/#tmpfs)
+
+[_Back to TOC_](#table-of-contents)
+
+### entrypoint [link](https://docs.docker.com/compose/compose-file/#entrypoint)
+
+[_Back to TOC_](#table-of-contents)
+
+### env\_file [link](https://docs.docker.com/compose/compose-file/#env_file)
+
+[_Back to TOC_](#table-of-contents)
+
+### environment [link](https://docs.docker.com/compose/compose-file/#environment)
+
+[_Back to TOC_](#table-of-contents)
+
+### expose [link](https://docs.docker.com/compose/compose-file/#expose)
+
+[_Back to TOC_](#table-of-contents)
+
+### external\_links [link](https://docs.docker.com/compose/compose-file/#external_links)
+
+[_Back to TOC_](#table-of-contents)
+
+### extra\_hosts [link](https://docs.docker.com/compose/compose-file/#extra_hosts)
+
+[_Back to TOC_](#table-of-contents)
+
+### healthcheck [link](https://docs.docker.com/compose/compose-file/#healthcheck)
+
+[_Back to TOC_](#table-of-contents)
+
+### image [link](https://docs.docker.com/compose/compose-file/#image)
+
+[_Back to TOC_](#table-of-contents)
+
+### isolation [link](https://docs.docker.com/compose/compose-file/#isolation)
+
+[_Back to TOC_](#table-of-contents)
+
+### labels [link](https://docs.docker.com/compose/compose-file/#labels-2)
+
+[_Back to TOC_](#table-of-contents)
+
+### links [link](https://docs.docker.com/compose/compose-file/#links)
+
+[_Back to TOC_](#table-of-contents)
+
+### logging [link](https://docs.docker.com/compose/compose-file/#logging)
+
+[_Back to TOC_](#table-of-contents)
+
+### network\_mode [link](https://docs.docker.com/compose/compose-file/#network_mode)
+
+[_Back to TOC_](#table-of-contents)
+
+### networks [link](https://docs.docker.com/compose/compose-file/#networks)
+
+[_Back to TOC_](#table-of-contents)
+
+### pid [link](https://docs.docker.com/compose/compose-file/#pid)
+
+[_Back to TOC_](#table-of-contents)
+
+### ports [link](https://docs.docker.com/compose/compose-file/#ports)
+
+[_Back to TOC_](#table-of-contents)
+
+### secrets [link](https://docs.docker.com/compose/compose-file/#secrets)
+
+[_Back to TOC_](#table-of-contents)
+
+### security\_opt [link](https://docs.docker.com/compose/compose-file/#security_opt)
+
+[_Back to TOC_](#table-of-contents)
+
+### stop\_grace\_period [link](https://docs.docker.com/compose/compose-file/#stop_grace_period)
+
+[_Back to TOC_](#table-of-contents)
+
+### stop\_signal [link](https://docs.docker.com/compose/compose-file/#stop_signal)
+
+[_Back to TOC_](#table-of-contents)
+
+### sysctls [link](https://docs.docker.com/compose/compose-file/#sysctls)
+
+[_Back to TOC_](#table-of-contents)
+
+### ulimits [link](https://docs.docker.com/compose/compose-file/#ulimits)
+
+[_Back to TOC_](#table-of-contents)
+
+### userns\_mode [link](https://docs.docker.com/compose/compose-file/#userns_mode)
+
+[_Back to TOC_](#table-of-contents)
+
+### volumes [link](https://docs.docker.com/compose/compose-file/#volumes)
+
+[_Back to TOC_](#table-of-contents)
+
+### restart [link](https://docs.docker.com/compose/compose-file/#restart)
 
 [_Back to TOC_](#table-of-contents)
 
