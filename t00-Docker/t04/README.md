@@ -150,13 +150,15 @@ First, let’s add a free visualizer service that lets us look at how our swarm 
 2. Create a `./data` directory on the manager
    
    ```
-   docker-machine ssh myvm1 "mkdir ./data"
-   
    docker-machine ssh myvm1 "pwd"
    > /home/docker
+   docker-machine ssh myvm1 "mkdir ./data"
    
-   docker-machine ssh myvm1 "ls ./"
-   > data
+   docker-machine ssh myvm1 "ls /home"
+   > /docker
+   docker-machine ssh myvm1 "ls /home/docker"
+   > /data
+   # /home/docker/data
    
    docker-machine ssh myvm2 "pwd"
    > /home/docker
