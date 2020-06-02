@@ -1,0 +1,674 @@
+Step 12/12 : RUN cd /DeepCoder/build && make
+---> Running in 5c3274838f39
+Scanning dependencies of target deepcoder
+[ 3%] Building CXX object lib/CMakeFiles/deepcoder.dir/find-program.cc.o
+In file included from /usr/include/c++/5/bits/hashtable.h:35:0,
+from /usr/include/c++/5/unordered_map:47,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/hashtable_policy.h: In instantiation of 'struct std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> >':
+/usr/include/c++/5/type_traits:137:12: required from 'struct std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > >'
+/usr/include/c++/5/type_traits:148:38: required from 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::Function, double>'
+/DeepCoder/include/attribute.h:8:47: required from here
+/usr/include/c++/5/bits/hashtable_policy.h:85:34: error: no match for call to '(const std::hash<dsl::Function>) (const dsl::Function&)'
+noexcept(declval<const _Hash&>()(declval<const _Key&>()))>
+^
+In file included from /usr/include/c++/5/bits/move.h:57:0,
+from /usr/include/c++/5/bits/stl_pair.h:59,
+from /usr/include/c++/5/utility:70,
+from /usr/include/c++/5/tuple:38,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/type_traits: In instantiation of 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >':
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::Function, double>'
+/DeepCoder/include/attribute.h:8:47: required from here
+/usr/include/c++/5/type_traits:148:38: error: 'value' is not a member of 'std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > >'
+: public integral_constant<bool, !_Pp::value>
+^
+In file included from /usr/include/c++/5/unordered_map:48:0,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/unordered_map.h: In instantiation of 'class std::unordered_map<dsl::Function, double>':
+/DeepCoder/include/attribute.h:8:47: required from here
+/usr/include/c++/5/bits/unordered_map.h:100:66: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef __umap_hashtable<_Key, _Tp, _Hash, _Pred, _Alloc> _Hashtable;
+^
+/usr/include/c++/5/bits/unordered_map.h:107:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::key_type key_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:108:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::value_type value_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:109:48: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::mapped_type mapped_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:110:43: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::hasher hasher;
+^
+/usr/include/c++/5/bits/unordered_map.h:111:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::key_equal key_equal;
+^
+/usr/include/c++/5/bits/unordered_map.h:112:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::allocator_type allocator_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:117:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::pointer pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:118:50: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::const_pointer const_pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:119:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::reference reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:120:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::const_reference const_reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:121:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::iterator iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:122:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::const_iterator const_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:123:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::local_iterator local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:124:57: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::const_local_iterator const_local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:125:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::size_type size_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:126:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+typedef typename _Hashtable::difference_type difference_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:280:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+operator=(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:379:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+emplace(_Args&&... __args)
+^
+/usr/include/c++/5/bits/unordered_map.h:432:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+insert(const value_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:439:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+insert(_Pair&& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:499:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+insert(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:645:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+equal_range(const key_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:649:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::Function> >, std::__detail::__is_noexcept_hash<dsl::Function, std::hash<dsl::Function> > > >'
+equal_range(const key_type& __x) const
+^
+In file included from /usr/include/c++/5/bits/hashtable.h:35:0,
+from /usr/include/c++/5/unordered_map:47,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/hashtable_policy.h: In instantiation of 'struct std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> >':
+/usr/include/c++/5/type_traits:137:12: required from 'struct std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > >'
+/usr/include/c++/5/type_traits:148:38: required from 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::PredicateLambda, double>'
+/DeepCoder/include/attribute.h:9:54: required from here
+/usr/include/c++/5/bits/hashtable_policy.h:85:34: error: no match for call to '(const std::hash<dsl::PredicateLambda>) (const dsl::PredicateLambda&)'
+noexcept(declval<const _Hash&>()(declval<const _Key&>()))>
+^
+In file included from /usr/include/c++/5/bits/move.h:57:0,
+from /usr/include/c++/5/bits/stl_pair.h:59,
+from /usr/include/c++/5/utility:70,
+from /usr/include/c++/5/tuple:38,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/type_traits: In instantiation of 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >':
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::PredicateLambda, double>'
+/DeepCoder/include/attribute.h:9:54: required from here
+/usr/include/c++/5/type_traits:148:38: error: 'value' is not a member of 'std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > >'
+: public integral_constant<bool, !_Pp::value>
+^
+In file included from /usr/include/c++/5/unordered_map:48:0,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/unordered_map.h: In instantiation of 'class std::unordered_map<dsl::PredicateLambda, double>':
+/DeepCoder/include/attribute.h:9:54: required from here
+/usr/include/c++/5/bits/unordered_map.h:100:66: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef __umap_hashtable<_Key, _Tp, _Hash, _Pred, _Alloc> _Hashtable;
+^
+/usr/include/c++/5/bits/unordered_map.h:107:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::key_type key_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:108:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::Pr
+edicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::value_type value_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:109:48: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::mapped_type mapped_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:110:43: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >,
+std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::hasher hasher;
+^
+/usr/include/c++/5/bits/unordered_map.h:111:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::key_equal key_equal;
+^
+/usr/include/c++/5/bits/unordered_map.h:112:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::allocator_type allocator_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:117:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::pointer pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:118:50: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::const_pointer const_pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:119:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::reference reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:120:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::const_reference const_reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:121:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::iterator iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:122:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::const_iterator const_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:123:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::local_iterator local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:124:57: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::const_local_iterator const_local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:125:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::size_type size_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:126:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+typedef typename _Hashtable::difference_type difference_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:280:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+operator=(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:379:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+emplace(_Args&&... __args)
+^
+/usr/include/c++/5/bits/unordered_map.h:432:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+insert(const value_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:439:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+insert(_Pair&& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:499:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+insert(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:645:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+equal_range(const key_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:649:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::PredicateLambda> >, std::__detail::__is_noexcept_hash<dsl::PredicateLambda, std::hash<dsl::PredicateLambda> > > >'
+equal_range(const key_type& __x) const
+^
+In file included from /usr/include/c++/5/bits/hashtable.h:35:0,
+from /usr/include/c++/5/unordered_map:47,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/hashtable_policy.h: In instantiation of 'struct std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> >':
+/usr/include/c++/5/type_traits:137:12: required from 'struct std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > >'
+/usr/include/c++/5/type_traits:148:38: required from 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::OneArgumentLambda, double>'
+/DeepCoder/include/attribute.h:10:56: required from here
+/usr/include/c++/5/bits/hashtable_policy.h:85:34: error: no match for call to '(const std::hash<dsl::OneArgumentLambda>) (const dsl::OneArgumentLambda&)'
+noexcept(declval<const _Hash&>()(declval<const _Key&>()))>
+^
+In file included from /usr/include/c++/5/bits/move.h:57:0,
+from /usr/include/c++/5/bits/stl_pair.h:59,
+from /usr/include/c++/5/utility:70,
+from /usr/include/c++/5/tuple:38,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/type_traits: In instantiation of 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >':
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::OneArgumentLambda, double>'
+/DeepCoder/include/attribute.h:10:56: required from here
+/usr/include/c++/5/type_traits:148:38: error: 'value' is not a member of 'std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > >'
+: public integral_constant<bool, !_Pp::value>
+^
+In file included from /usr/include/c++/5/unordered_map:48:0,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/unordered_map.h: In instantiation of 'class std::unordered_map<dsl::OneArgumentLambda, double>':
+/DeepCoder/include/attribute.h:10:56: required from here
+/usr/include/c++/5/bits/unordered_map.h:100:66: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef __umap_hashtable<_Key, _Tp, _Hash, _Pred, _Alloc> _Hashtable;
+^
+/usr/include/c++/5/bits/unordered_map.h:107:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::key_type key_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:108:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::value_type value_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:109:48: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::mapped_type mapped_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:110:43: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::hasher hasher;
+^
+/usr/include/c++/5/bits/unordered_map.h:111:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::key_equal key_equal;
+^
+/usr/include/c++/5/bits/unordered_map.h:112:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::allocator_type allocator_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:117:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::pointer pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:118:50: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::const_pointer const_pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:119:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::reference reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:120:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::const_reference const_reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:121:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::iterator iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:122:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::const_iterator const_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:123:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::local_iterator local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:124:57: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::const_local_iterator const_local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:125:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::size_type size_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:126:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+typedef typename _Hashtable::difference_type difference_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:280:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+operator=(initializer_list<value_type> __l
+)
+^
+/usr/include/c++/5/bits/unordered_map.h:379:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+emplace(_Args&&... __args)
+^
+/usr/include/c++/5/bits/unordered_map.h:432:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+insert(const value_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:439:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+insert(_Pair&& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:499:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda>
+>, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+insert(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:645:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+equal_range(const key_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:649:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::OneArgumentLambda> >, std::__detail::__is_noexcept_hash<dsl::OneArgumentLambda, std::hash<dsl::OneArgumentLambda> > > >'
+equal_range(const key_type& __x) const
+^
+In file included from /usr/include/c++/5/bits/hashtable.h:35:0,
+from /usr/include/c++/5/unordered_map:47,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/hashtable_policy.h: In instantiation of 'struct std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> >':
+/usr/include/c++/5/type_traits:137:12: required from 'struct std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > >'
+/usr/include/c++/5/type_traits:148:38: required from 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::TwoArgumentsLambda, double>'
+/DeepCoder/include/attribute.h:11:57: required from here
+/usr/include/c++/5/bits/hashtable_policy.h:85:34: error: no match for call to '(const std::hash<dsl::TwoArgumentsLambda>) (const dsl::TwoArgumentsLambda&)'
+noexcept(declval<const _Hash&>()(declval<const _Key&>()))>
+^
+In file included from /usr/include/c++/5/bits/move.h:57:0,
+from /usr/include/c++/5/bits/stl_pair.h:59,
+from /usr/include/c++/5/utility:70,
+from /usr/include/c++/5/tuple:38,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/type_traits: In instantiation of 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >':
+/usr/include/c++/5/bits/unordered_map.h:100:66: required from 'class std::unordered_map<dsl::TwoArgumentsLambda, double>'
+/DeepCoder/include/attribute.h:11:57: required from here
+/usr/include/c++/5/type_traits:148:38: error: 'value' is not a member of 'std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > >'
+: public integral_constant<bool, !_Pp::value>
+^
+In file included from /usr/include/c++/5/unordered_map:48:0,
+from /DeepCoder/include/dsl/interpreter.h:2,
+from /DeepCoder/include/dsl/utils.h:3,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/bits/unordered_map.h: In instantiation of 'class std::unordered_map<dsl::TwoArgumentsLambda, double>':
+/DeepCoder/include/attribute.h:11:57: required from here
+/usr/include/c++/5/bits/unordered_map.h:100:66: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef __umap_hashtable<_Key, _Tp, _Hash, _Pred, _Alloc> _Hashtable;
+^
+/usr/include/c++/5/bits/unordered_map.h:107:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::key_type key_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:108:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::value_type value_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:109:48: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::mapped_type mapped_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:110:43: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::hasher hasher;
+^
+/usr/include/c++/5/bits/unordered_map.h:111:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::key_equal key_equal;
+^
+/usr/include/c++/5/bits/unordered_map.h:112:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::allocator_type allocator_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:117:45: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::pointer pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:118:50: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::const_pointer const_pointer;
+^
+/usr/include/c++/5/bits/unordered_map.h:119:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::reference reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:120:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::const_reference const_reference;
+^
+/usr/include/c++/5/bits/unordered_map.h:121:46: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::iterator iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:122:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::const_iterator const_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:123:51: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::local_iterator local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:124:57: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::const_local_iterator const_local_iterator;
+^
+/usr/include/c++/5/bits/unordered_map.h:125:47: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::size_type size_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:126:52: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+typedef typename _Hashtable::difference_type difference_type;
+^
+/usr/include/c++/5/bits/unordered_map.h:280:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+operator=(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:379:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+emplace(_Args&&... __args)
+^
+/usr/include/c++/5/bits/unordered_map.h:432:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+insert(const value_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:439:2: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+insert(_Pair&& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:499:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+insert(initializer_list<value_type> __l)
+^
+/usr/include/c++/5/bits/unordered_map.h:645:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+equal_range(const key_type& __x)
+^
+/usr/include/c++/5/bits/unordered_map.h:649:7: error: 'value' is not a member of 'std::__not_<std::__and_<std::__is_fast_hash<std::hash<dsl::TwoArgumentsLambda> >, std::__detail::__is_noexcept_hash<dsl::TwoArgumentsLambda, std::hash<dsl::TwoArgumentsLambda> > > >'
+equal_range(const key_type& __x) const
+^
+In file included from /DeepCoder/include/dsl/ast.h:4:0,
+from /DeepCoder/include/dsl/utils.h:2,
+from /DeepCoder/lib/find-program.cc:7:
+/usr/include/c++/5/experimental/optional: In instantiation of 'std::size_t std::hash<std::experimental::fundamentals_v1::optional<_Tp> >::operator()(const std::experimental::fundamentals_v1::optional<_Tp>&) const [with _Tp = Sign; std::size_t = long unsigned int]':
+/usr/include/c++/5/bits/hashtable_policy.h:85:34: required from 'struct std::__detail::__is_noexcept_hash<std::experimental::fundamentals_v1::optional<Sign>, std::hash<std::experimental::fundamentals_v1::optional<Sign> > >'
+/usr/include/c++/5/type_traits:137:12: required from 'struct std::__and_<std::__is_fast_hash<std::hash<std::experimental::fundamentals_v1::optional<Sign> > >, std::__detail::__is_noexcept_hash<std::experimental::fundamentals_v1::optional<Sign>, std::hash<std::experimental::fundamentals_v1::optional<Sign> > > >'
+/usr/include/c++/5/type_traits:148:38: required from 'struct std::__not_<std::__and_<std::__is_fast_hash<std::hash<std::experimental::fundamentals_v1::optional<Sign> > >, std::__detail::__is_noexcept_hash<std::experimental::fundamentals_v1::optional<Sign>, std::hash<std::experimental::fundamentals_v1::optional<Sign> > > > >'
+/usr/include/c++/5/bits/unordered_set.h:95:63: required from 'class std::unordered_set<std::experimental::fundamentals_v1::optional<Sign> >'
+/DeepCoder/include/example-generator.h:30:59: required from here
+/usr/include/c++/5/experimental/optional:852:37: error: invalid use of incomplete type 'struct std::hash<Sign>'
+noexcept(noexcept(hash<_Tp> {}(*__t)))
+^
+In file included from /usr/include/c++/5/bits/basic_string.h:5471:0,
+from /usr/include/c++/5/string:52,
+from /usr/include/c++/5/stdexcept:39,
+from /usr/include/c++/5/array:38,
+from /usr/include/c++/5/tuple:39,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/bits/functional_hash.h:58:12: note: declaration of 'struct std::hash<Sign>'
+struct hash;
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:61:39: error: 'const class std::unordered_map<dsl::Function, double>' has no member named 'at'
+return attr.function_presence.at(f1) > attr.function_presence.at(f2);
+^
+/DeepCoder/lib/find-program.cc:61:71: error: 'const class std::unordered_map<dsl::Function, double>' has no member named 'at'
+return attr.function_presence.at(f1) > attr.function_presence.at(f2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:64:40: error: 'const class std::unordered_map<dsl::PredicateLambda, double>' has no member named 'at'
+return attr.predicate_presence.at(l1) > attr.predicate_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:64:73: error: 'const class std::unordered_map<dsl::PredicateLambda, double>' has no member named 'at'
+return attr.predicate_presence.at(l1) > attr.predicate_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:67:50: error: 'const class std::unordered_map<dsl::OneArgumentLambda, double>' has no member named 'at'
+return attr.one_argument_lambda_presence.at(l1) > attr.one_argument_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:67:93: error: 'const class std::unordered_map<dsl::OneArgumentLambda, double>' has no member named 'at'
+return attr.one_argument_lambda_presence.at(l1) > attr.one_argument_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In
+lambda function:
+/DeepCoder/lib/find-program.cc:70:51: error: 'const class std::unordered_map<dsl::TwoArgumentsLambda, double>' has no member named 'at'
+return attr.two_arguments_lambda_presence.at(l1) > attr.two_arguments_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:70:95: error: 'const class std::unordered_map<dsl::TwoArgumentsLambda, double>' has no member named 'at'
+return attr.two_arguments_lambda_presence.at(l1) > attr.two_arguments_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:146:39: error: 'const class std::unordered_map<dsl::Function, double>' has no member named 'at'
+return attr.function_presence.at(f1) > attr.function_presence.at(f2);
+^
+/DeepCoder/lib/find-program.cc:146:71: error: 'const class std::unordered_map<dsl::Function, dou
+ble>' has no member named 'at'
+return attr.function_presence.at(f1) > attr.function_presence.at(f2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:156:40: error: 'const class std::unordered_map<dsl::PredicateLambda, double>' has no member named 'at'
+return attr.predicate_presence.at(l1) > attr.predicate_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:156:73: error: 'const class std::unordered_map<dsl::PredicateLambda, double>' has no member named 'at'
+return attr.predicate_presence.at(l1) > attr.predicate_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:165:50: error: 'const class std::unordered_map<dsl::OneArgumentLambda, double>' has no member named 'at'
+return attr.one_argument_lambda_presence.at(l1) > attr.one_argument_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:165:93: error: 'const class std::unordered_map<dsl::OneArgumentLambda, double>' has no member named 'at'
+return attr.one_argument_lambda_presence.at(l1) > attr.one_argument_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In lambda function:
+/DeepCoder/lib/find-program.cc:168:51: error: 'const class std::unordered_map<dsl::TwoArgumentsLambda, double>' has no member named 'at'
+return attr.two_arguments_lambda_presence.at(l1) > attr.two_arguments_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc:168:95: error: 'const class std::unordered_map<dsl::TwoArgumentsLambda, double>' has no member named 'at'
+return attr.two_arguments_lambda_presence.at(l1) > attr.two_arguments_lambda_presence.at(l2);
+^
+/DeepCoder/lib/find-program.cc: In function 'std::experimental::fundamentals_v1::optional<std::vector<dsl::Statement> > sort_and_add(size_t, const Attribute&, const std::vector<Example>&)':
+/DeepCoder/lib/find-program.cc:243:69: error: 'const class std::unordered_map<dsl::Function, double>' has no member named 'at'
+auto f = (funcs_queue.empty()) ? 0 : attr.function_presence.at(funcs_queue.front());
+^
+/DeepCoder/lib/find-program.cc:244:75: error: 'const class std::unordered_map<dsl::PredicateLambda, double>' has no member named 'at'
+auto p = (predicates_queue.empty()) ? 0 : attr.predicate_presence.at(predicates_queue.front());
+^
+/DeepCoder/lib/find-program.cc:245:82: error: 'const class std::unordered_map<dsl::OneArgumentLambda, double>' has no member named 'at'
+auto o = (one_arg_queue.empty()) ? 0 : attr.one_argument_lambda_presence.at(one_arg_queue.front());
+^
+/DeepCoder/lib/find-program.cc:246:84: error: 'const class std::unordered_map<dsl::TwoArgumentsLambda, double>' has no member named 'at'
+auto t = (two_args_queue.empty()) ? 0 : attr.two_arguments_lambda_presence.at(two_args_queue.front());
+^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:71:0,
+from /usr/include/c++/5/bits/char_traits.h:39,
+from /usr/include/c++/5/string:40,
+from /usr/include/c++/5/stdexcept:39,
+from /usr/include/c++/5/array:38,
+from /usr/include/c++/5/tuple:39,
+from /DeepCoder/lib/find-program.cc:1:
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)>]'
+/DeepCoder/lib/find-program.cc:62:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+{ return bool(_M_comp(*__it1, *__it2)); }
+^
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)>]'
+/DeepCoder/lib/find-program.cc:65:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)>]'
+/DeepCoder/lib/find-program.cc:68:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)>]'
+/DeepCoder/lib/find-program.cc:71:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)>]'
+/DeepCoder/lib/find-program.cc:147:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:1
+2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)>]'
+/DeepCoder/lib/find-program.cc:157:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_
+sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)>]'
+/DeepCoder/lib/find-program.cc:166:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Iterator2 = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)>]':
+/usr/include/c++/5/bits/stl_algo.h:1842:14: required from 'void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1880:25: required from 'void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1966:31: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)>]'
+/DeepCoder/lib/find-program.cc:169:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:123:46: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Value = dsl::Function; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Distance = long int; _Tp = dsl::Function; _Compare = __gnu_cxx::__ops::_Iter_comp_val<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Distance = long int; _Tp = dsl::Function; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:1, auto:2)>]'
+/DeepCoder/lib/find-program.cc:62:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+{ return bool(_M_comp(*__it, __val)); }
+^
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Value = dsl::PredicateLambda; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Distance = long int; _Tp = dsl::PredicateLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Distance = long int; _Tp = dsl::PredicateLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:3, auto:4)>]'
+/DeepCoder/lib/find-program.cc:65:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Value = dsl::OneArgumentLambda; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Distance = long int; _Tp = dsl::OneArgumentLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Distance = long int; _Tp = dsl::OneArgumentLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:5, auto:6)>]'
+/DeepCoder/lib/find-program.cc:68:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Value = dsl::TwoArgumentsLambda; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Distance = long int; _Tp = dsl::TwoArgumentsLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Distance = long int; _Tp = dsl::TwoArgumentsLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, c
+onst Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare)
+[with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = dfs(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:7, auto:8)>]'
+/DeepCoder/lib/find-program.cc:71:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Value = dsl::Function; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Distance = long int; _Tp = dsl::Function; _Compare = __gnu_cxx::__ops::_Iter_comp_val<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Distance = long int; _Tp = dsl::Function; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::Function*, std::vector<dsl::Function> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:9, auto:10)>]'
+/DeepCoder/lib/find-program.cc:147:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Value = dsl::PredicateLambda; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Distance = long int; _Tp = dsl::PredicateLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Distance = long int; _Tp = dsl::PredicateLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::PredicateLambda*, std::vector<dsl::PredicateLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:11, auto:12)>]'
+/DeepCoder/lib/find-program.cc:157:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Value = dsl::OneArgumentLambda; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Distance = long int; _Tp = dsl::OneArgumentLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Distance = long int; _Tp = dsl::OneArgumentLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::OneArgumentLambda*, std::vector<dsl::OneArgumentLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:13, auto:14)>]'
+/DeepCoder/lib/find-program.cc:166:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+/usr/include/c++/5/bits/predefined_ops.h: In instantiation of 'bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Value = dsl::TwoArgumentsLambda; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)>]':
+/usr/include/c++/5/bits/stl_heap.h:129:48: required from 'void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Distance = long int; _Tp = dsl::TwoArgumentsLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_val<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_heap.h:228:23: required from 'void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Distance = long int; _Tp = dsl::TwoArgumentsLambda; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_heap.h:333:22: required from 'void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1669:23: required from 'void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1928:25: required from 'void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1943:27: required from 'void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:1963:25: required from 'void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLamb
+da> >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)> >]'
+/usr/include/c++/5/bits/stl_algo.h:4729:18: required from 'void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<dsl::TwoArgumentsLambda*, std::vector<dsl::TwoArgumentsLambda> >; _Compare = sort_and_add(size_t, const Attribute&, const std::vector<Example>&)::<lambda(auto:15, auto:16)>]'
+/DeepCoder/lib/find-program.cc:169:6: required from here
+/usr/include/c++/5/bits/predefined_ops.h:144:37: error: void value not ignored as it ought to be
+lib/CMakeFiles/deepcoder.dir/build.make:62: recipe for target 'lib/CMakeFiles/deepcoder.dir/find-program.cc.o' failed
+CMakeFiles/Makefile2:85: recipe for target 'lib/CMakeFiles/deepcoder.dir/all' failed
+Makefile:94: recipe for target 'all' failed
+make[2]: *** [lib/CMakeFiles/deepcoder.dir/find-program.cc.o] Error 1
+make[1]: *** [lib/CMakeFiles/deepcoder.dir/all] Error 2
+make: *** [all] Error 2
