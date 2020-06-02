@@ -1,0 +1,4 @@
+mkmf.log
+Gemfile.lock
+vendor
+.bundle
